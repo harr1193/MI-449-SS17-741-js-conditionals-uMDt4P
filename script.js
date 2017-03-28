@@ -25,14 +25,18 @@ if (randNum > 0.5) {
       } else { /* lose game if false */
         window.alert('The machine went off Gotham has been destroyed, Joker wins.')
       }
-    } else if (doorNum === 2) { /* Move on if door is 1 */
+    } else if (doorNum === 2) { /* Move on if door is 2 */
       var useJoker = window.confirm('You found Joker, make him turn off machine?')
       if (useJoker === true) { /* Win game if true */
         window.alert('Joker: "You foiled my plan this time Bat but, but I\'ll be back!"')
-      } else { /* If doorNum is 3 game is lost */
-        window.alert('This door lead to a dead end, your are out of time.')
+      } else { /* Lose if false */
         window.alert('The machine went off Gotham has been destroyed, Joker wins.')
       }
+    } else if (doorNum === 3) { /* Door number 3 */
+      window.alert('The door lead to a dead end, you are out of time')
+      window.alert('The machine went off Gotham has been destroyed, Joker wins.')
+    } else {
+      window.alert('The machine went off Gotham has been destroyed, Joker wins.')
     }
   } else { /* End game is saveTheCity is not 'yes' */
     window.alert('The machine went off Gotham has been destroyed, Joker wins.')
