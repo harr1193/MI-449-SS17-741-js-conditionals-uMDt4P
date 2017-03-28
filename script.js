@@ -30,6 +30,7 @@ if (randNum > 0.5) {
       if (useJoker === true) { /* Win game if true */
         window.alert('Joker: "You foiled my plan this time Bat but, but I\'ll be back!"')
       } else { /* If doorNum is 3 game is lost */
+        window.alert('This door lead to a dead end, your are out of time.')
         window.alert('The machine went off Gotham has been destroyed, Joker wins.')
       }
     }
